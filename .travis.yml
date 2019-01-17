@@ -1,4 +1,4 @@
 language: csharp
-solution: break-it.sln
+solution: GL_BreakIt.sln
 script:
     - echo "coucou"
