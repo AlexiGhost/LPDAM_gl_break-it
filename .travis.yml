@@ -1,0 +1,4 @@
+language: csharp
+solution: break-it.sln
+script:
+    - echo "coucou"
