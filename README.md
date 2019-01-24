@@ -23,8 +23,9 @@ Projet du module de génie loigiciel, création d'un casse-brique.
 - Id: 120
 ## Maquettes
 Les maquettes sont accessibles [ici](https://github.com/AlexiGhost/lp_gl_break-it/tree/master/Documentation/Maquettes).
-Elles sont consultables depuis n'importe quel naviguateur récent tel que Chrome ou Mozilla Firefox et sont interactives.
-> Un menu pause s'affiche si vous appuyez sur echap depuis la maquette de jeu.
+Deux versions sont disponibles, la version image ou la version navigateur.
+La version navigateur est consultable depuis n'importe quel naviguateur récent tel que Chrome ou Mozilla Firefox et est interactive.
+> Le menu pause s'affiche si vous appuyez sur echap depuis la maquette de jeu.
 ## Technologies utilisées
 - CSharp
 - Unity 3D
@@ -34,7 +35,7 @@ Elles sont consultables depuis n'importe quel naviguateur récent tel que Chrome
 Il y a 3 niveaux de branches
 - La branche master, où tout le contenu devra avoir passé les tests unitaires et les test d'intégrations.
 - La branche development, où les fonctionnalités ayant passé les test unitaires seront rassemblés afin d'effectuer des tests d'intégration.
-- Les branches dédiées au développement d'une fonctionnalitée, 
+- Les branches dédiées au développement d'une fonctionnalitée, elles seront assez instables et demanderons des tests plus avancés.
 ### Sprint (Milestone)
 Les sprints sont regroupés [ici](https://github.com/AlexiGhost/lp_gl_break-it/milestones).
 ### Gestion des tests
