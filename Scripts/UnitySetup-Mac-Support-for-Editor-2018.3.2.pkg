@@ -1,0 +1,1 @@
+<?xml version='1.0' encoding='UTF-8'?><Error><Code>AccessDenied</Code><Message>Access denied.</Message><Details>Anonymous caller does not have storage.objects.get access to publishing-unity-binaries-prd/b3c100a4b73a/MacEditorTargetInstaller/UnitySetup-Mac-Support-for-Editor-2018.3.2.pkg.</Details></Error>
