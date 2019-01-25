@@ -1,9 +1,8 @@
-language: objective-c
-osx_image: xcode10.1
+language: csharp
+solution: GL_BreakIt.sln
 before_install:
-    - chmod a+x ./Scripts/install.sh
-    - chmod a+x ./Scripts/build.sh
+    - chmod a+x ./travis_scripts/run-tests.sh
 install:
-    - ./Scripts/install.sh
+    - travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./GL_BreakIt.sln
 script:
-    - ./Scripts/build.sh
+    - travis_scripts/run-tests.sh
