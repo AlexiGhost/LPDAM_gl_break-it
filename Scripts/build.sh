@@ -17,8 +17,8 @@ echo "Attempting to build $project for OS X"
   -batchmode \
   -nographics \
   -silent-crashes \ 
-  -logFile $(pwd)/unity.log \ 
-  -projectPath $(pwd) \
+  -logFile $(pwd)/Logs/unity.log \ 
+  -projectPath "$(pwd)" \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
   -quit
 
@@ -33,7 +33,7 @@ echo "Attempting to build $project for OS X"
 #   -quit
 
 echo 'Logs from build'
-cat $(pwd)/unity.log
+cat $(pwd)/Logs/unity.log
 
 
 echo 'Attempting to zip builds'
