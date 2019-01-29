@@ -1,4 +1,9 @@
-language: csharp
-solution: GL_BreakIt.sln
+language: objective-c
+osx_image: xcode10.1
+before_install:
+    - chmod a+x ./Scripts/install.sh
+    - chmod a+x ./Scripts/build.sh
+install:
+    - ./Scripts/install.sh
 script:
-    - echo "coucou"
+    - ./Scripts/build.sh
