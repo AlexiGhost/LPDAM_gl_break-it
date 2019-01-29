@@ -13,14 +13,7 @@ project="break-it"
 #   -quit
 
 echo "Attempting to build $project for OS X"
-/Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -batchmode \
-  -nographics \
-  -silent-crashes \ 
-  -logFile \ 
-  -projectPath $(pwd)/ \
-  -executeMethod BuildScript.OSX \
-  -quit
+/Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -nographics -silent-crashes -logFile "$(pwd)/Logs/unity.log" -projectPath "$(pwd)/" -executeMethod BuildScript.OSX -quit
 
 # echo "Attempting to build $project for Linux"
 # /Applications/Unity/Unity.app/Contents/MacOS/Unity 
