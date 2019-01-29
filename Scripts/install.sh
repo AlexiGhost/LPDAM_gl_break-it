@@ -22,9 +22,9 @@ install() {
 # of available packages, where PLATFORM is `osx` or `win`
 
 install "Unity-$VERSION.pkg"
-install "Windows64EditorInstaller/UnitySetup64-$VERSION.pkg"
+#install "Windows64EditorInstaller/UnitySetup64-$VERSION.pkg"
 install "MacEditorInstaller/Unity-$VERSION.pkg"
-install "UnitySetup-Linux-Support-for-Editor-$VERSION.pkg"
+#install "UnitySetup-Linux-Support-for-Editor-$VERSION.pkg"
 
 # https://netstorage.unity3d.com/unity/393bae82dbb8/Windows64EditorInstaller/UnitySetup64-2018.3.3f1.exe?_ga=2.143539637.1834526946.1548748994-1956150118.1547220807
 # https://netstorage.unity3d.com/unity/393bae82dbb8/MacEditorInstaller/Unity-2018.3.3f1.pkg?_ga=2.151985465.1834526946.1548748994-1956150118.1547220807
