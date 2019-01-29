@@ -17,9 +17,9 @@ echo "Attempting to build $project for OS X"
   -batchmode \
   -nographics \
   -silent-crashes \ 
-  -logFile $(pwd)/Logs/unity.log \ 
-  -projectPath "$(pwd)" \
-  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+  -logFile \ 
+  -projectPath $(pwd)/ \
+  -executeMethod BuildScript.OSX \
   -quit
 
 # echo "Attempting to build $project for Linux"

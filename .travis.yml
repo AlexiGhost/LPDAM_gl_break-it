@@ -1,4 +1,4 @@
-language: generic
+language: objective-c
 os: osx
 branches:
   only:
