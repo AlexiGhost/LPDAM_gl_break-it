@@ -13,7 +13,7 @@ project="break-it"
 #   -quit
 
 echo "Attempting to build $project for OS X"
-/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+/Applications/Unity_${VERSION}/Unity.app/Contents/MacOS/Unity \
   -batchmode \
   -nographics \
   -silent-crashes \ 
