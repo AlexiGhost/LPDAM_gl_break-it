@@ -6,7 +6,6 @@ branches:
 before_install:
     - chmod a+x ./travis-scripts/install.sh
     - chmod a+x ./travis-scripts/build.sh
-    - chmod a+x /Library/Application Support/Unity/Unity_lic.ulf
     - export UNITY_LICENSE_CONTENT=`cat Unity_v2018.x.ulf`
 before_script:
   - chmod a+x ./travis-scripts/before-script.sh && ./travis-scripts/before-script.sh
