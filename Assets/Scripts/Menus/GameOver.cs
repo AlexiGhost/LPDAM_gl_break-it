@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace jumpAndLearn.menus
+namespace BreakIt.menu
 {
     public class GameOver : MonoBehaviour
     {
@@ -16,7 +16,7 @@ namespace jumpAndLearn.menus
 
         public void ReplayGame()
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("Level1"); //TODO load last level
         }
 
         public void MainMenu()
