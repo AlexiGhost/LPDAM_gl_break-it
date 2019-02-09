@@ -10,7 +10,6 @@ namespace BreakIt.menu
 
         private void Start()
         {
-            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
 
@@ -24,14 +23,8 @@ namespace BreakIt.menu
             SceneManager.LoadScene("MainMenu");
         }
 
-        public void Hub()
-        {
-            SceneManager.LoadSceneAsync("Hub");
-        }
-
         public void QuitGame()
         {
-            Debug.Log("QUIT!");
             Application.Quit();
         }
     }
