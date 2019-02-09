@@ -1,8 +1,16 @@
-language: csharp
-solution: GL_BreakIt.sln
+language: objective-c
+os: osx
+branches:
+  only:
+  - master
 before_install:
-    - chmod a+x ./travis_scripts/run-tests.sh
+    - chmod a+x ./travis-scripts/install.sh
+    - chmod a+x ./travis-scripts/build.sh
+    - export UNITY_LICENSE_CONTENT=`cat Unity_v2018.x.ulf`
 install:
-    - travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./GL_BreakIt.sln
+    - ./travis-scripts/install.sh
 script:
-    - travis_scripts/run-tests.sh
+    - ./travis-scripts/build.sh
+env:
+  global:
+  - VERSION="2018.3.3f1" 
