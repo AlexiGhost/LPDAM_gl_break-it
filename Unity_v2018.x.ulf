@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><root>
+    <License id="Terms">
+        <MachineBindings>
+            <Binding Key="1" Value="42044A08-8570-4C2D-BD4A-BB3EA7766E60"/>
+            <Binding Key="2" Value="VMI8KxQDLGKp"/>
+        </MachineBindings>
+        <MachineID Value="vAN6fOagNZjy7uuouqyti8Qi3+M="/>
+        <SerialHash Value="21d6e0868c1b97b99bd0ae6932439478b091c427"/>
+        <Features>
+            <Feature Value="33"/>
+            <Feature Value="1"/>
+            <Feature Value="12"/>
+            <Feature Value="2"/>
+            <Feature Value="24"/>
+            <Feature Value="3"/>
+            <Feature Value="36"/>
+            <Feature Value="17"/>
+            <Feature Value="19"/>
+            <Feature Value="62"/>
+        </Features>
+        <DeveloperData Value="AQAAAEY0LUU0V0gtTVY0My1NWEhSLThOSFEtUkNRRw=="/>
+        <SerialMasked Value="F4-E4WH-MV43-MXHR-8NHQ-XXXX"/>
+        <StartDate Value="2019-02-05T15:41:16"/>
+        <UpdateDate Value="2019-02-06T15:41:18"/>
+        <InitialActivationDate Value="2019-02-05T15:41:16"/>
+        <LicenseVersion Value="6.x"/>
+        <ClientProvidedVersion Value="2018.3.3f1"/>
+        <AlwaysOnline Value="false"/>
+        <Entitlements>
+            <Entitlement Ns="unity_editor" Tag="UnityPersonal" Type="EDITOR" ValidTo="9999-12-31T00:00:00"/>
+        </Entitlements>
+    </License>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#Terms"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>h7ibtcF3EcM/ngdRT4jUW5mRi1Q=</DigestValue></Reference></SignedInfo><SignatureValue>hshukIqUSINJjIgU1H8lsFRB/XphZZnMyYJkUUtU3iWgKp/CfWOMGlNUVI3EAEvUnmoo2I5h2a0S
+GmP6I26nFfFu3gmbQvaezpNjyVJcqn711KWX1tUjwVZHKwAGaqKLSuuYsPIqzvJxzCpSAd/eeMJo
+8MX+bvodj0zZY5yxUZ0Sb1GMUVySsEcdfvgKyeNWiFaXA9L4cw5q0pwN6413VSim5ub3m4zfkbni
+iBNm3tmv1TMagjtAX845nQg243feA61C4YvjRGuIbabFGI30qZvW0qVqa6I+F1zxciIRQOi01BUo
+X+8kao2zk+ptEoORGkW+/VFuQwvaYNNfBtoV3Q==</SignatureValue></Signature></root>
