@@ -9,12 +9,7 @@ public class Brick : MonoBehaviour
     public void DestroyBrick()
     {
         Instantiate(particles, transform.position, Quaternion.identity);
-        GameManager.instance.DestroyBrick();
-        Destroy(gameObject);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("Brickcollision");
+        Level.instance.DestroyBrick();
+        Destroy(gameObject, 0.1f);
     }
 }

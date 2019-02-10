@@ -2,18 +2,10 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int lives;
-    public float resetDelay = 1f;
-
-    public TextMeshProUGUI livesText;
-    public GameObject loseText;
-    public GameObject wonText;
-
-    private int bricks;
-
     public static GameManager instance;
 
     // Start is called before the first frame update
@@ -23,20 +15,20 @@ public class GameManager : MonoBehaviour
             instance = this;
         else if (instance != this)
             Destroy(gameObject);
-        bricks = FindObjectsOfType<Brick>().Length;
+        DontDestroyOnLoad(gameObject);
     }
 
-    public void DestroyBrick()
+    public void NextLevel(int level)
     {
-        bricks--;
-        Debug.Log(bricks);
-        if (bricks == 0)
-            WinLevel();
+        //Go to the next level, if there is none, go to main menu
+        if (SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/Level" + (level + 1) + ".unity") != -1)
+            SceneManager.LoadSceneAsync("Level" + (level + 1));
+        else
+            SceneManager.LoadSceneAsync("MainMenu");
     }
 
-    private void WinLevel()
+    public void RestartLevel()
     {
-        wonText.SetActive(true);
-        Time.timeScale = 0.25f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
 
-    public float ballInitialVelocity = 500f;
+    private float ballInitialVelocity = 500f;
 
     private Rigidbody rb;
     private bool launched;
