@@ -12,8 +12,10 @@ public class Level : MonoBehaviour
     public TextMeshProUGUI livesText;
     public GameObject loseText;
     public GameObject wonText;
-    public bool isLevelWon;
+    public GameObject ballPrefab;
+    public GameObject paddle;
 
+    private bool isLevelWon;
     private int bricks;
     private AudioSource audioSource;
 
@@ -25,6 +27,7 @@ public class Level : MonoBehaviour
         Cursor.visible = false;
         instance = this;
         bricks = FindObjectsOfType<Brick>().Length;
+        bricks = GameObject.FindGameObjectsWithTag("brick").Length;
         livesText.text = "Vies : " + lives;
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = GameManager.instance.VolumeGeneral * GameManager.instance.VolumeMusic;
@@ -45,12 +48,15 @@ public class Level : MonoBehaviour
         StartCoroutine(EndLevel());
     }
 
-    private void LoseLive()
+    public void LoseLive()
     {
         lives--;
+        livesText.text = "Vies : " + lives;
         if (lives == 0)
         {
             LoseLevel();
+        } else {
+            NewBall();
         }
     }
 
@@ -63,10 +69,15 @@ public class Level : MonoBehaviour
         }
     }
 
+    private void NewBall()
+    {
+        Instantiate(ballPrefab, paddle.transform);
+    }
 
     private IEnumerator EndLevel()
     {
         yield return new WaitForSecondsRealtime(3f);
+        Time.timeScale = 1f;
         if (isLevelWon)
             GameManager.instance.NextLevel(level);
         else

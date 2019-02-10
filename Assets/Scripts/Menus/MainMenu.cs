@@ -15,7 +15,10 @@ namespace BreakIt.menu
 
         public void Continue()
         {
-            SceneManager.LoadScene("Level"+GameManager.instance.Level);
+            if (SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/Level" + (GameManager.instance.Level) + ".unity") != -1)
+                SceneManager.LoadSceneAsync("Level" + (GameManager.instance.Level));
+            else
+                SceneManager.LoadSceneAsync("Level"+ (GameManager.instance.Level-1));
         }
 
         public void LevelSelection()
