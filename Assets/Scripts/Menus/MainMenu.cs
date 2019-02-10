@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace BreakIt.menu
 {
-    public class GameOver : MonoBehaviour
+    public class MainMenu : MonoBehaviour
     {
 
         private void Start()
@@ -13,14 +13,19 @@ namespace BreakIt.menu
             Cursor.visible = true;
         }
 
-        public void ReplayGame()
+        public void Continue()
         {
-            SceneManager.LoadScene("Level1"); //TODO load last level
+            SceneManager.LoadScene("Level"+PlayerPrefs.GetInt("level", 1));
         }
 
-        public void MainMenu()
+        public void LevelSelection()
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Levels");
+        }
+
+        public void Options()
+        {
+            SceneManager.LoadScene("Options");
         }
 
         public void QuitGame()
