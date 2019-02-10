@@ -10,12 +10,12 @@ public class GameManager : MonoBehaviour
 
     public float VolumeGeneral
     {
-        get => (PlayerPrefs.GetInt("v_general", 100) / 100);
+        get => (PlayerPrefs.GetInt("v_general", 100) / 100f);
         set => PlayerPrefs.SetInt("v_general", Mathf.FloorToInt(value * 100));
     }
     public float VolumeMusic
     {
-        get => (PlayerPrefs.GetInt("v_music", 100) / 100)*VolumeGeneral;
+        get => (PlayerPrefs.GetInt("v_music", 100) / 100f);
         set => PlayerPrefs.SetInt("v_music", Mathf.FloorToInt(value * 100));
     }
     public int Level

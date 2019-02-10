@@ -25,9 +25,9 @@ public class Level : MonoBehaviour
         Cursor.visible = false;
         instance = this;
         bricks = FindObjectsOfType<Brick>().Length;
-        livesText.text = "Lives : " + lives;
+        livesText.text = "Vies : " + lives;
         audioSource = GetComponent<AudioSource>();
-        audioSource.volume = GameManager.instance.VolumeMusic;
+        audioSource.volume = GameManager.instance.VolumeGeneral * GameManager.instance.VolumeMusic;
     }
 
     public void DestroyBrick()
