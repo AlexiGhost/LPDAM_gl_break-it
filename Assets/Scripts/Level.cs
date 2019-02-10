@@ -15,6 +15,7 @@ public class Level : MonoBehaviour
     public bool isLevelWon;
 
     private int bricks;
+    private AudioSource audioSource;
 
     public static Level instance;
 
@@ -25,6 +26,8 @@ public class Level : MonoBehaviour
         instance = this;
         bricks = FindObjectsOfType<Brick>().Length;
         livesText.text = "Lives : " + lives;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = GameManager.instance.VolumeMusic;
     }
 
     public void DestroyBrick()

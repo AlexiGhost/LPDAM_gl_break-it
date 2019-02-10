@@ -8,20 +8,39 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public float VolumeGeneral
+    {
+        get => (PlayerPrefs.GetInt("v_general", 100) / 100);
+        set => PlayerPrefs.SetInt("v_general", Mathf.FloorToInt(value * 100));
+    }
+    public float VolumeMusic
+    {
+        get => (PlayerPrefs.GetInt("v_music", 100) / 100)*VolumeGeneral;
+        set => PlayerPrefs.SetInt("v_music", Mathf.FloorToInt(value * 100));
+    }
+    public int Level
+    {
+        get => PlayerPrefs.GetInt("level", 1);
+        set => PlayerPrefs.SetInt("level", value);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         if (instance == null)
+        {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else if (instance != this)
-            Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+            Destroy(this);
     }
 
     public void NextLevel(int level)
     {
-        if (level == PlayerPrefs.GetInt("level"))
-            PlayerPrefs.SetInt("level", level+1);
+        if (level == Level)
+            Level = Level + 1;
+
         //Go to the next level, if there is none, go to main menu
         if (SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/Level" + (level + 1) + ".unity") != -1)
             SceneManager.LoadSceneAsync("Level" + (level + 1));

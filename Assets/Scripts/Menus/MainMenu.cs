@@ -15,7 +15,7 @@ namespace BreakIt.menu
 
         public void Continue()
         {
-            SceneManager.LoadScene("Level"+PlayerPrefs.GetInt("level", 1));
+            SceneManager.LoadScene("Level"+GameManager.instance.Level);
         }
 
         public void LevelSelection()
