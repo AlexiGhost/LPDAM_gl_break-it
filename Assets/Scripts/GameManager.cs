@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel(int level)
     {
+        if (level == PlayerPrefs.GetInt("level"))
+            PlayerPrefs.SetInt("level", level+1);
         //Go to the next level, if there is none, go to main menu
         if (SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/Level" + (level + 1) + ".unity") != -1)
             SceneManager.LoadSceneAsync("Level" + (level + 1));

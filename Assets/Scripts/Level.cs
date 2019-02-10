@@ -21,6 +21,7 @@ public class Level : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
         instance = this;
         bricks = FindObjectsOfType<Brick>().Length;
         livesText.text = "Lives : " + lives;
