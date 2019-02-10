@@ -20,12 +20,12 @@ namespace BreakIt.menu
 
         public void LevelSelection()
         {
-            SceneManager.LoadScene("Levels");
+            SceneManager.LoadScene("LevelMenu");
         }
 
         public void Options()
         {
-            SceneManager.LoadScene("Options");
+            SceneManager.LoadScene("OptionMenu");
         }
 
         public void QuitGame()

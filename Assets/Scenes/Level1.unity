@@ -707,27 +707,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &328629943 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1179407101770477543, guid: 995d61d9776033946994e313b9831367,
-    type: 3}
-  m_PrefabInstance: {fileID: 335691661}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &328629944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328629943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_GeneratorAsset: {fileID: 0}
-  m_Script: {fileID: 11500000, guid: 0daeeb85256bf2f4abe6c0e715df887b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particles: {fileID: 7975185959571102274, guid: 54946a480b99ea748a2d058285a49f9f,
-    type: 3}
 --- !u!4 &329294067 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1179407101770477539, guid: 85757fb2bff331741b63d61ef3dae3b0,
@@ -766,11 +745,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red Brick
-      objectReference: {fileID: 0}
-    - target: {fileID: 1179407101770477543, guid: 995d61d9776033946994e313b9831367,
-        type: 3}
-      propertyPath: m_TagString
-      value: brick
       objectReference: {fileID: 0}
     - target: {fileID: 1179407101770477539, guid: 995d61d9776033946994e313b9831367,
         type: 3}
@@ -827,12 +801,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1179407101770477542, guid: 995d61d9776033946994e313b9831367,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: c9e1de317c371294f9b13c7b3937fb76,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 995d61d9776033946994e313b9831367, type: 3}
 --- !u!1001 &371624664
@@ -1907,11 +1875,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow Brick (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1179407101770477543, guid: 50bee0658b6c9fc4581d6f3a63b904d5,
-        type: 3}
-      propertyPath: m_TagString
-      value: brick
-      objectReference: {fileID: 0}
     - target: {fileID: 1179407101770477539, guid: 50bee0658b6c9fc4581d6f3a63b904d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1967,12 +1930,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1179407101770477542, guid: 50bee0658b6c9fc4581d6f3a63b904d5,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: c9e1de317c371294f9b13c7b3937fb76,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50bee0658b6c9fc4581d6f3a63b904d5, type: 3}
 --- !u!1 &743067872
@@ -2799,27 +2756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: {fileID: 7975185959571102274, guid: 54946a480b99ea748a2d058285a49f9f,
     type: 3}
---- !u!1 &1047039082 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1179407101770477543, guid: fdc4ea9591c424c4fb87aadec3371eb4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1220350859}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1047039083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047039082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_GeneratorAsset: {fileID: 0}
-  m_Script: {fileID: 11500000, guid: 0daeeb85256bf2f4abe6c0e715df887b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particles: {fileID: 7975185959571102274, guid: 5aaf9da281e3fc044aa9308d32aec2dd,
-    type: 3}
 --- !u!1 &1053733529
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,11 +3192,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange Brick (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1179407101770477543, guid: fdc4ea9591c424c4fb87aadec3371eb4,
-        type: 3}
-      propertyPath: m_TagString
-      value: brick
-      objectReference: {fileID: 0}
     - target: {fileID: 1179407101770477539, guid: fdc4ea9591c424c4fb87aadec3371eb4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3316,12 +3247,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1179407101770477542, guid: fdc4ea9591c424c4fb87aadec3371eb4,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: c9e1de317c371294f9b13c7b3937fb76,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdc4ea9591c424c4fb87aadec3371eb4, type: 3}
 --- !u!1 &1247527586 stripped
@@ -4629,27 +4554,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: {fileID: 7975185959571102274, guid: 54946a480b99ea748a2d058285a49f9f,
     type: 3}
---- !u!1 &1659629485 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1179407101770477543, guid: 85757fb2bff331741b63d61ef3dae3b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1852221584}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1659629486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659629485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_GeneratorAsset: {fileID: 0}
-  m_Script: {fileID: 11500000, guid: 0daeeb85256bf2f4abe6c0e715df887b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particles: {fileID: 7975185959571102274, guid: 553fbf4eb32c6744b8bd44ae4a3fb81f,
-    type: 3}
 --- !u!1001 &1673963906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5149,11 +5053,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Brick (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1179407101770477543, guid: 85757fb2bff331741b63d61ef3dae3b0,
-        type: 3}
-      propertyPath: m_TagString
-      value: brick
-      objectReference: {fileID: 0}
     - target: {fileID: 1179407101770477539, guid: 85757fb2bff331741b63d61ef3dae3b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5209,12 +5108,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1179407101770477542, guid: 85757fb2bff331741b63d61ef3dae3b0,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: c9e1de317c371294f9b13c7b3937fb76,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85757fb2bff331741b63d61ef3dae3b0, type: 3}
 --- !u!1 &1864110352
@@ -5772,27 +5665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 7975185959571102274, guid: 5aaf9da281e3fc044aa9308d32aec2dd,
-    type: 3}
---- !u!1 &2131469955 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1179407101770477543, guid: 50bee0658b6c9fc4581d6f3a63b904d5,
-    type: 3}
-  m_PrefabInstance: {fileID: 742040370}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2131469956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131469955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_GeneratorAsset: {fileID: 0}
-  m_Script: {fileID: 11500000, guid: 0daeeb85256bf2f4abe6c0e715df887b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particles: {fileID: 7975185959571102274, guid: 64110dda4afe1c24c95df8c15a9912be,
     type: 3}
 --- !u!1 &2140621920
 GameObject:
