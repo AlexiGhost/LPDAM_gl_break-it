@@ -27,4 +27,12 @@ public class Ball : MonoBehaviour
             rb.AddForce(new Vector3(ballInitialVelocity, ballInitialVelocity, 0));
         }
     }
+
+    public void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.CompareTag("brick"))
+        {
+            other.transform.GetComponent<Brick>().DestroyBrick();
+        }
+    }
 }
