@@ -6590,7 +6590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5341b90c9d90c948a835889d2dc137c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 1
+  level: 2
   lives: 3
   livesText: {fileID: 1463820526}
   loseText: {fileID: 1547218264}
