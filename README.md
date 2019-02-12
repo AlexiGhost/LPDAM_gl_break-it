@@ -2,7 +2,7 @@
 Projet du module de génie loigiciel, création d'un casse-brique.
 
 ## Accroche du projet
-
+Tu t'ennuie dans l'avion ? Tu cherches à faire passer le temps ? Breat It est fait pour toi ! Un jeu de casse brique hors du commun qui sera t'occuper pendant plusieurs heures grâce aux différents niveaux dont il est composé ! 
 ## Nom des etudiants
 - COURIEUX Alexi
 - DEMMER Lisa-Marie
@@ -39,7 +39,7 @@ Il y a 3 niveaux de branches
 ### Sprint (Milestone)
 Les sprints sont regroupés [ici](https://github.com/AlexiGhost/lp_gl_break-it/milestones).
 ### Gestion des tests
-
+Les tests sont gérés grâce à un outil inclus dans Unity3D : TestRunner. Cet outil permet de créer un fichier de test, et de lancer tout les tests en même temps.
 ### Politique d'intégration continue
 Utilisation de Travis CI afin d'effectuer les test de compilation.
 ### Boards
