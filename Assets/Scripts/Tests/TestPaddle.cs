@@ -15,7 +15,7 @@ namespace Tests
             // Use the Assert class to test conditions
             var go = new GameObject();
             var originalPosition = go.transform.position.x;
-            for (float i = 0; i < 1; i++)
+            for (float i = -1; i < 1; i = i + 0.1f)
             {
                 //i refer to input.getAxis("Horizontal") value
                 float xPos = go.transform.position.x + i;
