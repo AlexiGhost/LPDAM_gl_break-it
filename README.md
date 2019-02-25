@@ -27,8 +27,7 @@ Deux versions sont disponibles, la version image ou la version navigateur.
 La version navigateur est consultable depuis n'importe quel naviguateur récent tel que Chrome ou Mozilla Firefox et est interactive.
 > Le menu pause s'affiche si vous appuyez sur echap depuis la maquette de jeu.
 ## Technologies utilisées
-- CSharp
-- Unity 3D
+On utilise Unity avec le langage CSharp car Unity est un outil pour créer des jeux vidéos et qui permet de faire des applications disponible sur Android et Apple. L'avantage par rapport aux technologies natives et qu'on a pas de surcouche, on a accès directement aux fonctionnalités grâce au langage CSharp. De plus, les technologies hybrides ne serait pas très utiles car il y a peu de menu.
 ## Organisation du projet
 
 ### Politique des branches
