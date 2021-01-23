@@ -36,7 +36,7 @@ Il y a 3 niveaux de branches
 - La branche development, où les fonctionnalités ayant passé les test unitaires seront rassemblés afin d'effectuer des tests d'intégration.
 - Les branches dédiées au développement d'une fonctionnalitée, elles seront assez instables et demanderons des tests plus avancés.
 ### Sprint (Milestone)
-Les sprints sont regroupés [ici](https://github.com/AlexiGhost/lp_gl_break-it/milestones).
+Les sprints sont regroupés [ici](https://github.com/AlexiGhost/LPDAM_gl_break-it/milestones?state=closed).
 ### Gestion des tests
 Les tests sont gérés grâce à un outil inclus dans Unity3D : TestRunner. Cet outil permet de créer un fichier de test, et de lancer tout les tests en même temps.
 ### Politique d'intégration continue
