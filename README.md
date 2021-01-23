@@ -22,8 +22,8 @@ Tu t'ennuie dans l'avion ? Tu cherches à faire passer le temps ? Breat It est f
 - Description: Le joueur doit pouvoir casser des briques pour terminer le niveau
 - Id: 120
 ## Maquettes
-Les maquettes sont accessibles [ici](https://github.com/AlexiGhost/lp_gl_break-it/tree/master/Documentation/Maquettes).
-Deux versions sont disponibles, la version image ou la version navigateur.
+Les maquettes sont accessibles [ici](https://github.com/AlexiGhost/lp_gl_break-it/tree/master/Documentation/Mockups).
+Deux versions sont disponibles, la version image ou la version [navigateur](https://alexighost.github.io/LPDAM_gl_break-it/menu_home.html).
 La version navigateur est consultable depuis n'importe quel naviguateur récent tel que Chrome ou Mozilla Firefox et est interactive.
 > Le menu pause s'affiche si vous appuyez sur echap depuis la maquette de jeu.
 ## Technologies utilisées
